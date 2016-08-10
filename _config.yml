@@ -5,7 +5,10 @@ twitter_username: ncbrown1
 github_username: ncbrown1
 
 # Build settings
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+sass:
+  sass_dir: _sass
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num/"
