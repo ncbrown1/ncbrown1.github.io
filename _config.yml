@@ -1,3 +1,12 @@
+title: Nick Brown | Software Developer
 name: Nick Brown
+email: nickbrown714@gmail.com
+twitter_username: ncbrown1
+github_username: ncbrown1
+
+# Build settings
+gems: [jekyll-paginate]
 markdown: kramdown
+paginate: 5
+paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title
