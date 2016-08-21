@@ -28,36 +28,69 @@
 	</head>
 	<body>
 		<!--BEGIN Nav Header -->
-		<section class="section">
-			<nav class="nav">
-				<div class="container">
-				  <div class="nav-left">
-				    <a class="nav-item is-brand" href="/">
-							<h1 class="title">Nick Brown</h1>
-				      <!-- <img src="/images/bulma.png" alt="Bulma logo}"> -->
-				    </a>
-				  </div>
+		<section class="hero is-primary is-bold">
+		  <!-- Hero header: will stick at the top -->
+		  <div class="hero-head">
+		    <header class="nav">
+		      <div class="container">
+		        <div class="nav-left">
+		          <a class="nav-item is-brand" href="/">
+								<h1 class="title is-4">Nick Brown</h1>
+		          </a>
+		        </div>
 
-				  <span class="nav-toggle">
-				    <span></span>
-				    <span></span>
-				    <span></span>
-				  </span>
+		        <span class="nav-toggle">
+		          <span></span>
+		          <span></span>
+		          <span></span>
+		        </span>
 
-				  <div class="nav-right nav-menu">
-				    <a class="nav-item" href="/">Home</a>
-				    <a class="nav-item" href="/about">About</a>
-				    <a class="nav-item" href="/resume">Resume</a>
-				    <a class="nav-item" href="/blog">Blog</a>
-				  </div>
+					  <div class="nav-right nav-menu">
+					    <a class="nav-item" href="/">Home</a>
+					    <a class="nav-item" href="/about">About</a>
+					    <a class="nav-item" href="/resume">Resume</a>
+					    <a class="nav-item" href="/blog">Blog</a>
+					  </div>
+		      </div>
+		    </header>
+		  </div>
+
+			{% if page.subtitle or page.date %}
+			  <!-- Hero content: will be in the middle -->
+			  <div class="hero-body">
+			    <div class="container has-text-centered">
+			      <h1 class="title">
+			        {{ page.title }}
+			      </h1>
+			      <h2 class="subtitle">
+							{% if page.subtitle %}
+			        	{{ page.subtitle }}
+							{% elsif page.date %}
+								Posted {{ page.date | date_to_string }}
+							{% endif %}
+			      </h2>
+			    </div>
+			  </div>
+			{% endif %}
+
+			{% if page.links %}
+				<!-- Hero footer: will stick at the bottom -->
+				<div class="hero-foot">
+					<nav class="tabs is-boxed is-fullwidth">
+						<div class="container">
+							<ul>
+								{% for link in page.links %}
+									<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</nav>
 				</div>
-			</nav>
+			{% endif %}
 		</section>
 		<!--END Nav Header -->
 
-		<section class="section no-top-padding">
-			{{ content }}
-		</section>
+		{{ content }}
 
 		<!--BEGIN Footer -->
 		<footer class="footer">

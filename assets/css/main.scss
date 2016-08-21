@@ -4,10 +4,11 @@
 @import "footer";
 @import "framework";
 
-a, a:visited {
+.footer a,
+.footer a:visited {
   color: #69707a !important;
 }
-a:hover {
+.footer a:hover {
   color: #222222 !important;
 }
 
@@ -24,6 +25,7 @@ a:hover {
   height:256px;
   margin:0 auto 1em;
 }
+
 .nick-pic img {
   border-radius: 50%;
   border: 1px solid #dddddd;

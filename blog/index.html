@@ -1,39 +1,32 @@
 ---
 layout: default
 title: Nick's Blog
+subtitle: Things that I feel others should know.
 ---
-<section class="hero no-top-padding">
-  <!-- Hero content: will be in the middle -->
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">{{ page.title }}</h1>
-      <h2 class="subtitle">Things that I feel others should know.</h2>
+<section class="section">
+  <div class="container content">
+    <!-- This loops through the paginated posts -->
+    {% for post in paginator.posts %}
+      <h2 class="title is-3"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <p class="subtitle">
+        <span class="date">{{ post.date | date_to_string }}</span>
+      </p>
+      <div class="content">
+        {{ post.content }}
+      </div>
+    {% endfor %}
+
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      {% endif %}
     </div>
+
+    <br/>
   </div>
 </section>
-
-<div class="container content">
-  <!-- This loops through the paginated posts -->
-  {% for post in paginator.posts %}
-    <h2 class="title is-3"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-    <p class="subtitle">
-      <span class="date">{{ post.date | date_to_string }}</span>
-    </p>
-    <div class="content">
-      {{ post.content }}
-    </div>
-  {% endfor %}
-
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% endif %}
-  </div>
-
-  <br/>
-</div>
