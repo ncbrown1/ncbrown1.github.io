@@ -1,50 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-    <script src="https://use.fontawesome.com/1b5853a8bb.js"></script>
+		<meta name="description" content="">
+	  <meta name="author" content="Nick Brown (nick@nick-brown.me)">
+
+	  <!-- Mobile Specific Metas
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- FONT
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+		<!-- CSS
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+		<!-- JS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/assets/js/font-awesome.js"></script>
+
+	  <!-- Favicon
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 	</head>
 	<body>
-		<nav>
-  		<ul>
-    		<li><a href="/">Home</a></li>
-      	<li class="dropdown">
-          <a href="/about">About <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-          <div class="dropdown-content">
-            <ul>
-              <li><a href="/about/books">My Books</a></li>
-            </ul>
-          </div>
-        </li>
-    		<li><a href="/resume">Resume</a></li>
-    		<li><a href="/blog">Blog</a></li>
-  		</ul>
-		</nav>
-		<div class="container">
+		<!--BEGIN Nav Header -->
+		<section class="section">
+			<nav class="nav">
+				<div class="container">
+				  <div class="nav-left">
+				    <a class="nav-item is-brand" href="/">
+							<h1 class="title">Nick Brown</h1>
+				      <!-- <img src="/images/bulma.png" alt="Bulma logo}"> -->
+				    </a>
+				  </div>
 
-		{{ content }}
+				  <div class="nav-center">
+				    <a class="nav-item" href="mailto:nick@nick-brown.me" title="email">
+				      <span class="icon">
+				        <i class="fa fa-envelope-o"></i>
+				      </span>
+				    </a>
+				    <a class="nav-item" href="https://github.com/ncbrown1" title="github">
+				      <span class="icon">
+				        <i class="fa fa-github-alt"></i>
+				      </span>
+				    </a>
+				    <a class="nav-item" href="https://linkedin.com/in/ncbrown1" title="linkedin">
+				      <span class="icon">
+				        <i class="fa fa-linkedin"></i>
+				      </span>
+				    </a>
+				    <a class="nav-item" href="https://twitter.com/ncbrown1" title="twitter">
+				      <span class="icon">
+				        <i class="fa fa-twitter"></i>
+				      </span>
+				    </a>
+				  </div>
 
-		</div><!-- /.container -->
-		<footer>
-    	<ul>
-    		<li><a href="mailto:nick@nick-brown.me" title="email">
-          <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-        </a></li>
-    		<li><a href="https://github.com/ncbrown1" title="github">
-          <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
-        </a></li>
-        <li><a href="https://linkedin.com/in/ncbrown1" title="linkedin">
-          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-        </a></li>
-        <li><a href="https://twitter.com/ncbrown1" title="twitter">
-          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-        </a></li>
-        <li><a href="https://open.spotify.com/user/121577201" title="spotify">
-          <i class="fa fa-spotify fa-2x" aria-hidden="true"></i>
-        </a></li>
-			</ul>
+				  <span class="nav-toggle">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				  </span>
+
+				  <div class="nav-right nav-menu">
+				    <a class="nav-item" href="/">Home</a>
+				    <a class="nav-item" href="/about">About</a>
+				    <a class="nav-item" href="/resume">Resume</a>
+				    <a class="nav-item" href="/blog">Blog</a>
+				  </div>
+				</div>
+			</nav>
+		</section>
+		<!--END Nav Header -->
+
+		<section class="section">
+			{{ content }}
+		</section>
+
+		<!--BEGIN Footer -->
+		<footer class="footer">
+			<div class="container">
+		    <div class="content has-text-centered">
+		      <p>
+		        <strong>Site Design</strong> by <a href="http://nick-brown.me">Nick Brown</a>.
+						CSS Framework is <a href="http://bulma.io/">Bulma</a>.
+						The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+		      </p>
+		      <p>
+		    		<a href="mailto:nick@nick-brown.me" title="email">
+		          <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		    		<a href="https://github.com/ncbrown1" title="github">
+		          <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		        <a href="https://linkedin.com/in/ncbrown1" title="linkedin">
+		          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		        <a href="https://twitter.com/ncbrown1" title="twitter">
+		          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		        <a href="https://open.spotify.com/user/121577201" title="spotify">
+		          <i class="fa fa-spotify fa-2x" aria-hidden="true"></i>
+		        </a>
+		      </p>
+		    </div>
+			</div>
 		</footer>
+		<!--END Footer -->
+
+		<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				$(".nav-toggle").on("click", function(event) {
+					$(".nav-menu").toggleClass('is-active');
+				});
+			});
+		</script>
 	</body>
 </html>
