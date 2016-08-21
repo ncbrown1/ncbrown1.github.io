@@ -4,6 +4,10 @@
 @import "footer";
 @import "framework";
 
+.no-top-padding {
+  padding-top: 0 !important;
+}
+
 .nav .title {
   font-weight: bold;
 }

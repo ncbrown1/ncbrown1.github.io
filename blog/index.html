@@ -2,9 +2,17 @@
 layout: default
 title: Nick's Blog
 ---
-<div class="container content">
-  <h1 class="title is-1">{{ page.title }}</h1>
+<section class="hero no-top-padding">
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">{{ page.title }}</h1>
+      <h2 class="subtitle">Things that I feel others should know.</h2>
+    </div>
+  </div>
+</section>
 
+<div class="container content">
   <!-- This loops through the paginated posts -->
   {% for post in paginator.posts %}
     <h2 class="title is-3"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
