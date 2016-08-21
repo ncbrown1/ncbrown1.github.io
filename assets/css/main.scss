@@ -4,6 +4,13 @@
 @import "footer";
 @import "framework";
 
+a, a:visited {
+  color: #69707a !important;
+}
+a:hover {
+  color: #222222 !important;
+}
+
 .no-top-padding {
   padding-top: 0 !important;
 }
