@@ -15,3 +15,6 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title
+
+# plugin settings
+related_project_keys: ["category", "technology"]

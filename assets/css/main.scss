@@ -31,8 +31,19 @@
   border: 1px solid #dddddd;
 }
 
+.is-inline-block {
+  display: inline-block;
+  margin: 0.4em 0.25em;
+}
+
 .sideways-scroll {
   width: 100%;
   max-width: 100%;
   overflow-x: scroll;
+}
+
+.overflow-proof {
+  height: 250px;
+  max-height: 250px;
+  overflow: scroll;
 }
