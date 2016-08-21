@@ -11,12 +11,12 @@ destination: docs/
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
 gems:
   - jekyll-paginate
-sass:
-  sass_dir: _sass
 markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title
+sass:
+  sass_dir: _sass
 
 # plugin settings
 related_project_keys: ["category", "technology"]
