@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Nick Brown's Blog</title>
+	<link href="http://ncbrown1.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://ncbrown1.github.io/blog"/>
+	<updated>2016-08-21T15:21:39-07:00</updated>
+	<id>http://ncbrown1.github.io/blog</id>
+	<author>
+		<name>Nick Brown</name>
+		<email>nickbrown714@gmail.com</email>
+	</author>
+
+	
+		<entry>
+			<title>Site is Launched!</title>
+			<link href="http://ncbrown1.github.io/blog/2016/08/21/nick-brown-site-launched"/>
+			<updated>2016-08-21T00:00:00-07:00</updated>
+			<id>/blog/2016/08/21/nick-brown-site-launched</id>
+			<content type="html">&lt;p&gt;After multiple attempts of creating a personal website, I have finally followed through. My previous attempts were way too complicated and made it hard to be productive and proactive. I tried making a single-page application (SPA) with React and Redux, but it was too hard to make changes and I didn’t make smart decisions with deployment. I also tried making a full stack Flask/Jinja website, but again, deployment troubles kept me from making progress.&lt;/p&gt;
+
+&lt;p&gt;Now, it is &lt;em&gt;very&lt;/em&gt; easy to work with my website. It’s hosted completely by &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub Pages&lt;/a&gt; and powered by &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, so I don’t have to worry about deployments or overly complicated JavaScript frameworks. All I have to do is write, because it’s Markdown! Jekyll is super easy to use and manage, so I can make rapid changes with little-to-no friction. I look forward to writing more and publishing content. Check back frequently!&lt;/p&gt;
+
+&lt;p&gt;–Nick&lt;/p&gt;
+</content>
+		</entry>
+	
+
+</feed>
