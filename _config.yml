@@ -8,6 +8,7 @@ twitter_username: ncbrown1
 
 # Build settings
 destination: docs/
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
 gems:
   - jekyll-paginate
 sass:

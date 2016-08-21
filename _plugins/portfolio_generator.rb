@@ -1,7 +1,6 @@
 module Jekyll
     class ProjectPage < Page
         def initialize(site, base, dir, project_data)
-            puts "hello"
             @site = site
             @base = base
             @dir = dir
@@ -18,7 +17,6 @@ module Jekyll
         safe true
 
         def generate(site)
-            puts 'in the plugin'
             dir = site.config["portfolio_dir"] || "portfolio"
 
             # First get the related projects and add them to each project
@@ -27,20 +25,15 @@ module Jekyll
                 compute_related_projects(site)
             end
 
-            site.pages << ProjectPage.new(site, site.source, "portfolio/ocs", {"title" => "OCS"})
-
             # Then generate the project pages
             site.data["projects"].each do |project_file|
                 project = project_file[1]
 
                 # I Love Cats -> i-love-cats
-                file_name_slug = slugify(project["title"])
+                file_name_slug = slugify(project_file[0])
 
                 # portfolio/i-love-cats/
                 path = File.join(dir, file_name_slug)
-                project["dir"] = path
-                project["foo"] = "bar"
-                site.data["projects"][project_file[0]] = project
 
                 site.pages << ProjectPage.new(site, site.source, path, project)
             end
@@ -122,15 +115,12 @@ module Jekyll
 
     module ProjectFilter
         def get_projects_from_files(input)
-            # projects = []
-            # input.each { |project| projects.push(project[1]) }
-            # return projects
-            return ['foo', 'bar', 'baz']
+            projects = []
+            input.each { |project| projects.push(project[1]) }
+            return projects
         end
     end
 
 end
-puts "hadsf"
-print "asdfa"
 
 Liquid::Template.register_filter(Jekyll::ProjectFilter)
