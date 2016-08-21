@@ -2,9 +2,73 @@
 layout: default
 title: Nick's Resume
 subtitle: What I've done and what I'm qualified to do.
+links:
+  - url: "#summary"
+    title: Summary
+  - url: "#interests"
+    title: Interests
+  - url: "#skills"
+    title: Skills
+  - url: "#work-history"
+    title: Work History
+  - url: "#education"
+    title: Education
+  - url: "#"
+    title: Portfolio
 ---
 <section class="section">
   <div class="container content">
-    <p>This is a placeholder for my resume!</p>
+    <p>This is a prototype for my resume page! Right now, I am just copying my <a href="https://linkedin.com/in/ncbrown1">LinkedIn profile</a>.</p>
+
+    <h2 class="title is-3" id="summary">Summary</h2>
+    {% for paragraph in site.data.resume.summary %}
+      <p>{{ paragraph }}</p>
+    {% endfor %}
+
+    <hr>
+
+    <h2 class="title is-3" id="interests">Interests</h2>
+    <p style="line-height:200%">
+      {% for interest in site.data.resume.interests %}
+        <span class="tag is-warning">{{ interest }}</span>
+      {% endfor %}
+    </p>
+
+    <hr>
+
+    <h2 class="title is-3" id="skills">Skills</h2>
+    <p style="line-height:200%">
+      {% for skill in site.data.resume.skills %}
+        <span class="tag is-dark">{{ skill }}</span>
+      {% endfor %}
+    </p>
+
+    <hr>
+
+    <h2 class="title is-3" id="work-history">Work History</h2>
+    {% for job in site.data.resume.jobs %}
+      <h3 class="title is-5">{{ job.title }}</h3>
+      <h4 class="subtitle is-6">{{ job.company }} | {{ job.time }} | {{ job.location }}</h4>
+      {% for pg in job.description %}
+        <p>{{ pg }}</p>
+      {% endfor %}
+    {% endfor %}
+
+    <hr>
+
+    <h2 class="title is-3" id="education">Education</h2>
+    {% for school in site.data.resume.education %}
+      <h3 class="title is-5">{{ school.school }}</h3>
+      <h4 class="subtitle is-6">{{ school.degree }}, GPA: {{ school.GPA }}</h4>
+      <p>
+        Activities:
+        {% for activity in school.activities %}
+          {{ activity }}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+      {% for pg in school.summary %}
+        <p>{{ pg }}</p>
+      {% endfor %}
+    {% endfor %}
   </div>
 </section>
