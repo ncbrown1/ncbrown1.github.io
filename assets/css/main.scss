@@ -1,8 +1,17 @@
 ---
 ---
 
-@import "footer";
+// @import "footer";
 @import "framework";
+
+.page {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.greeting {
+  margin-top: 8%;
+}
 
 .no-top-padding {
   padding-top: 0 !important;
