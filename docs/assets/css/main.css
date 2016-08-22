@@ -3842,3 +3842,9 @@ a.panel-block:hover {
   width: auto;
   max-height: 350px;
   border: 1px solid #888888; }
+
+.the-raven {
+  margin: 0 auto; }
+
+.the-raven img {
+  width: auto; }
