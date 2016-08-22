@@ -1,7 +1,16 @@
 title: Object Codes Online Search
-description: An illegal street racing game but with cats.
-date: 2016/02/08
+company: UCSB LSIT
+time: April 2015
+image:
+  url: /assets/images/projects/ocs.png
+  title: Object Codes Online Search
+  alt: The search interface for OCS
+links:
+  project: "http://objectcodes.lsit.ucsb.edu"
+  repository: "https://github.com/ncbrown1/OCS"
 category: web development
 technology:
-    - JavaScript
-    - PHP
+  - JavaScript
+  - PHP
+description: |
+  In order to spend university, the budget allocations typically must be assigned an "object code" which describes the purpose for which it is being spent. Before this software solution, users were required to read through a PDF with a long list of such codes to try and find which one best suited their needs. As such, the most common option chosen was the "miscellaneous" option, which is a big problem. I developed a search mechanism, which users can now use to more efficiently find the optimal object code to use for their expenditures by looking up keywords that fit their descriptions.

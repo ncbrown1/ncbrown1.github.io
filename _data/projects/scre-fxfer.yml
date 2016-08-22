@@ -1,0 +1,18 @@
+title: Secure File Transfer Application
+company: UCSB Engineering, UCSB LSIT
+time: December 2014 – January 2015, April 2016 - June 2016
+image:
+  url: /assets/images/projects/scre-fxfer.png
+  title: File Transfer Gateway
+  alt: The landing page for SCRE File Transfer Gateway
+links:
+  project: "https://file-xfer-dev.scre.ucsb.edu"
+category: web development
+technology:
+  - Python
+  - Django
+  - JavaScript
+  - Security Scans
+  - Daemons
+description: |
+  A website designed to facilitate the secure transfer of sensitive information from external parties to the university for research purposes. Includes virus scanning, checksum generation, dual factor authentication, file sharing permissions, and a user-friendly interface. Developed using the python Django web framework.

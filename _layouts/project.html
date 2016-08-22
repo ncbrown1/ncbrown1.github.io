@@ -2,14 +2,46 @@
 layout: default
 ---
 <section class="section">
+  <a href="/resume/portfolio">&larr; Back to Portfolio</a><br><br>
+
   <h1 class="title">{{ page.title }}</h1>
-  <h2 class="subtitle">{{ page.category }}</h2>
+  <h2 class="subtitle">Category: {{ page.category }}</h2>
 
+  <p><strong>Time Frame</strong>:</p>
+  <p>{{ page.time }}</p>
+  <br>
+
+  {% if page.image %}
+    <div class="project-image has-text-centered">
+      <figure class="image">
+        <img src="{{ page.image.url }}" title="{{ page.image.title }}">
+        <p><i>{{ page.image.alt }}</i></p>
+      </figure>
+    </div>
+    <br>
+  {% endif %}
+
+  <p><strong>Technologies</strong>:</p>
+  <p style="line-height:200%">
+    {% for technology in page.technology %}
+      <span class="tag is-primary">{{ technology }}</span>
+    {% endfor %}
+  </p>
+  <br>
+
+  {% if page.links %}
+    <p><strong>Links</strong>:</p>
+    <p>
+      {% if page.links.project %}
+        <a class="level-item button is-info" href="{{ page.links.project }}">Link to Project</a>
+      {% endif %}
+      {% if page.links.repository %}
+        <a class="level-item button is-dark" href="{{ page.links.repository }}"><i class="fa fa-github"></i> &nbsp; View Source</a>
+      {% endif %}
+    </p>
+    <br>
+  {% endif %}
+
+  <p><strong>Project Description</strong>:</p>
   <p>{{ page.description }}</p>
-
-  <ul>
-      {% for technology in page.technology %}
-      <li><a>{{ technology }}</a></li>
-      {% endfor %}
-  </ul>
 </section>

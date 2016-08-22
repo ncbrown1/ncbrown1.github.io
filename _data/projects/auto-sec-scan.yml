@@ -1,0 +1,11 @@
+title: Security Scan Auto-scheduler
+company: UCSB Engineering
+time: August 2015
+category: scripting
+technology:
+  - Python
+  - SMTP
+  - Nessus
+  - Daemons
+description: |
+  Wrote a python daemon script to randomly schedule security scans across the networks managed by the college of engineering. The list of all subnets gets split into chunks that get processed weekly, so that no security happens at the same time twice. Before, these scans had to be manually run via a graphical interface.

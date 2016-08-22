@@ -1,0 +1,18 @@
+title: UCSB Connect Initiative
+company: UCSB LSIT
+time: Starting June 2015
+links:
+  project: "http://www.connect.ucsb.edu"
+category: scripting
+technology:
+  - Perl
+  - PowerShell
+  - RabbitMQ
+  - Multithreading
+  - LDAP
+description: |
+  "Connect is UCSB’s new communication and collaboration service. The core communication components include e-mail and calendaring, with more to come as we expand the service offerings. The core components of Connect are based on Google Apps for Work - Education Edition."​ - http://www.connect.ucsb.edu/about"
+
+  My responsibilities for this project are mainly related to user/functional/resource account actions. In addition to creating programs to handle future activities within Connect's jurisdiction, we are also creating specialized scripts to aid in the migration process from our previous infrastructure.
+
+  One of such scripts was a perl program that went through lists of usernames that corresponded to users that owned Oracle CorporateTime calendars on the local calendar server. Due to the large number of users, the program had to be run in parallel, which let it process about 3200 accounts in 12 hours with 8 processors (it would have taken a few days in serial).

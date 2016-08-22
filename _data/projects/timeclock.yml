@@ -1,0 +1,14 @@
+title: Employee Time Management Website
+company: UCSB Engineering
+time: April 2014 – May 2014
+links:
+  repository: "https://github.com/ncbrown1/timeclock"
+category: web development
+technology:
+  - Python
+  - Django
+  - JavaScript
+  - Daemons
+  - SQL
+description: |
+  Created a website to facilitate productive communication between employees and supervisors. Coded using the Django python library, as well as utilizing Javascript and CSS to make the user experience more fluid. Includes a clock-in/clock-out feature, shift history, timecard generation, staff forum, supervisor panel to show who is "clocked in", account management, and security features such as password encryption and an HTTPS connection.

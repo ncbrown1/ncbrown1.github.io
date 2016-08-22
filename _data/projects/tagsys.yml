@@ -1,0 +1,22 @@
+title: Tag System Android Application
+company: UCSB Engineering
+time: February 2014 – March 2014
+image:
+  url: /assets/images/projects/tagsys.png
+  title: TagSys
+  alt: The starting point for the TagSys application
+links:
+  project: /assets/tagsys_documentation.pdf
+  repository: "https://github.com/ncbrown1/TagSys"
+category: mobile
+technology:
+  - Android
+  - Java
+  - NFC
+  - Python
+  - Django
+  - REST
+  - LDAP
+  - SQL
+description: |
+  Developed an android application utilizing NFC and RESTful services (custom designed using the Django REST framework) to enforce lab and facility maintenance for the UCSB College of Engineering. It authenticates against the college's LDAP servers in order to provide history of who checked what. Small NFC tags are placed around the college, and the android device "checks in" via NFC to give a brief status description of the item or room associated with said tag and POSTs the information to the database.

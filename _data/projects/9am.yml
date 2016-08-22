@@ -1,0 +1,19 @@
+title: Project 9AM
+company: LinkedIn
+time: June 2016 - August 2016
+image:
+  url: "http://placehold.it/300x225"
+  title: "Project 9AM"
+  alt: A screenshot of the home page of Project 9AM (TODO)
+category: web development
+technology:
+  - Python
+  - Flask
+  - JavaScript
+  - Ember.JS
+  - Beanstalkd
+  - Couchbase
+  - Gunicorn
+  - SQL
+description: |
+  Placeholder.

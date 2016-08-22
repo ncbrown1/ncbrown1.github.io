@@ -1,0 +1,16 @@
+title: Box-Man / Box Admin Interface (BAI)
+company: UCSB LSIT
+time: November 2015 – February 2016
+image:
+  url: "http://placehold.it/300x225"
+  title: Box-Man
+  alt: A screenshot of the home page of Box-Man (TODO)
+category: web development
+technology:
+  - PHP
+  - Laravel
+  - Box API
+  - LDAP
+  - SQL
+description: |
+  Once UCSB integrated Box Enterprise cloud storage into the campus, our support teams needed a way to manage our end users. Thus came Box-Man (or the Box-Admin-Interface), which acts as a proxy to the Box Content API for our enterprise instance. This product allows help desk staff perform operations and view information about end users without granting them full administrative access to the entire UCSB Box system. In addition, all operations performed on this application are thoroughly logged for retrospective purposes.

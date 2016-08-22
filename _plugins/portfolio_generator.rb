@@ -34,6 +34,7 @@ module Jekyll
 
                 # portfolio/i-love-cats/
                 path = File.join(dir, file_name_slug)
+                project["dir"] = path
 
                 site.pages << ProjectPage.new(site, site.source, path, project)
             end

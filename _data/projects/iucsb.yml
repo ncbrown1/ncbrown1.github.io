@@ -1,0 +1,10 @@
+title: UCSB Information Hub Android Application (iUCSB)
+company: UCSB Engineering
+time: March 2015 – August 2015
+category: mobile
+technology:
+  - Android
+  - Java
+  - RSS
+description: |
+  This application is being developed in order to illuminate the lack of a central information source for the University of California, Santa Barbara. It is made to scrape various campus-hosted websites for data describing current events or news, and use that data to display and link to the resource sources in a convenient interface for user digestion. Throughout the project, I have worked closely with college marketing/engineering teams in order to provide a similar experience to the products they are developing.

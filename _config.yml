@@ -21,4 +21,5 @@ sass:
   sass_dir: _sass
 
 # plugin settings
+portfolio_dir: 'resume/portfolio'
 related_project_keys: ["category", "technology"]

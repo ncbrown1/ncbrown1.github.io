@@ -1,0 +1,19 @@
+title: UPS-Pi
+company: UCSB LSIT
+time: July 2015 – September 2015
+category: web development
+technology:
+  - Perl
+  - NodeJS
+  - JavaScript
+  - SNMP
+  - Raspberry Pi
+  - Express
+  - AngularJS
+  - SQL
+description: |
+  Typically, UPSs (Uninterruptible Power Supplies) are monitored through the use of proprietary (expensive) cards that plug into the machines. These cards output data about the UPS via SNMP and give a web interface to manipulate various settings.
+
+  We decided that this functionality could be replicated relatively easily on a RaspberryPi through the use of NUT (Network UPS Tools). When connected to a UPS via USB, the RaspberryPi can retrieve the same information that the cards can get through NUT. That information is transformed and broadcasted on a similar OID tree via snmpd and SNMP::Extension::PassPersist in Perl. As that information is collected, it is not only broadcasted, but also recorded in a local database log.
+
+  The second part of this project is the web frontend, which is implemented in NodeJS (Express) and AngularJS. The site allows system administrators to manipulate the data from the logs and configure various settings for the UPS.

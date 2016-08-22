@@ -1,0 +1,22 @@
+title: Project Anacapa
+company: UCSB (Research)
+time: January 2016 - Present
+image:
+  url: /assets/images/projects/anacapa.png
+  title: "Project Anacapa"
+  alt: A screenshot of the home page of Project Anacapa
+links:
+  repository: "https://github.com/project-anacapa/anacapa-grader-alpha"
+category: web development
+technology:
+  - Ruby on Rails
+  - Ruby
+  - RSpec
+  - JavaScript
+  - Sidekiq
+  - Redis
+  - SQL
+description: |
+  As class sizes grow, the task of grading each student's assignments becomes very daunting--especially with computer science. There has already been a substantial amount of research done in the area of auto-grading systems, and many have resulted in useful systems, such as the one already in use at UCSB (submit.cs.ucsb.edu). However, these systems have their downsides as well, such as lack of software testing, monolithic code bases, deprecated technologies, and poor design.
+
+  What we are aiming to do with Project Anacapa is to provide a slim internet application that integrates with dependable enterprise-level internet services and libraries (e.g. GitHub, Ruby on Rails, and Sidekiq) in order to provide scalable, modular, and dependable auto-grading service. Ideally, this will overcome the downfalls of previous implementations and be able to be ported to other universities with ease. We hope to make the application dependable and autonomous enough to allow for minimal support from system administrators.

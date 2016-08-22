@@ -1,0 +1,20 @@
+title: Zombie Run IV
+company: UCSB (Class)
+time: January 2016 – March 2016
+image:
+  url: /assets/images/projects/zombie-run-iv.png
+  title: Zombie Run IV
+  alt: Playing the game and not doing too well
+links:
+  project: "http://zombie-run-iv.herokuapp.com"
+  repository: "https://github.com/ncbrown1/zombie-run-iv-api"
+category: applications
+technology:
+  - C#
+  - Unity
+  - Python
+  - Flask
+  - SQL
+  - REST
+description: |
+  Zombie Run IV was a fun project that our team created for our CS 48 class during the Winter 2016 quarter at UCSB. We created it using Unity and C#. It takes place in Isla Vista after a zombie outbreak due to some horrible bio-engineering project that went awry. The aim of the game is to run for as long as you can, avoiding the obstacles (e.g. raccoons, trash bags, burning couches) and trying to catch the powerups (e.g. high fives from friends, burritos, drinks). There is a REST api hosted on Heroku that maintains the persistent player data, such as high scores and currency.

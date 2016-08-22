@@ -1,0 +1,38 @@
+---
+layout: default
+title: Nick's Portfolio
+subtitle: These are the things that I have done.
+---
+<section class="section">
+  {% assign projects = site.data.projects | get_projects_from_files | sort:'title' %}
+  {% for project in projects %}
+    <div class="box">
+      <article class="media">
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>{{ project.title }}</strong> <small>({{ project.time }})</small>
+              <br>
+              <small><i>{{ project.category | slugify}}</i></small>
+              <br>
+              {{ project.description | truncatewords: 50 }} <a href="/{{ project.dir }}">Read more...</a>
+            </p>
+          </div>
+          <nav class="level">
+            <div class="level-left">
+              <a class="level-item button is-success" href="/{{ project.dir }}">View Project Page</a>
+              {% if project.links %}
+                {% if project.links.project %}
+                  <a class="level-item button is-info" href="{{ project.links.project }}">Link to Project</a>
+                {% endif %}
+                {% if project.links.repository %}
+                  <a class="level-item button is-dark" href="{{ project.links.repository }}"><i class="fa fa-github"></i> &nbsp; View Source</a>
+                {% endif %}
+              {% endif %}
+            </div>
+          </nav>
+        </div>
+      </article>
+    </div>
+  {% endfor %}
+</section>
