@@ -3830,7 +3830,15 @@ a.panel-block:hover {
   max-width: 100%;
   overflow-x: scroll; }
 
-.overflow-proof {
-  height: 250px;
-  max-height: 250px;
-  overflow: scroll; }
+.project-image {
+  margin: 0 auto;
+  text-align: center; }
+
+.project-image > figure,
+.project-image > figure > img {
+  margin: 0 auto; }
+
+.project-image img {
+  width: auto;
+  height: 350px;
+  border: 1px solid #888888; }

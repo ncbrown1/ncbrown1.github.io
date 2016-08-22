@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UCSB Connect Initiative</title>
+		<meta name="description" content="">
+	  <meta name="author" content="Nick Brown (nick@nick-brown.me)">
+
+	  <!-- Mobile Specific Metas
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- FONT
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+		<!-- CSS
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+		<!-- JS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="/assets/js/font-awesome.js"></script>
+
+	  <!-- Favicon
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+	</head>
+	<body>
+		<!--BEGIN Nav Header -->
+		<section class="hero is-primary is-bold">
+		  <!-- Hero header: will stick at the top -->
+		  <div class="hero-head">
+		    <header class="nav">
+		      <div class="container">
+		        <div class="nav-left">
+		          <a class="nav-item is-brand" href="/">
+								<h1 class="title is-4">Nick Brown</h1>
+		          </a>
+		        </div>
+
+		        <span class="nav-toggle">
+		          <span></span>
+		          <span></span>
+		          <span></span>
+		        </span>
+
+					  <div class="nav-right nav-menu">
+					    <a class="nav-item" href="/">Home</a>
+					    <a class="nav-item" href="/about">About</a>
+					    <a class="nav-item" href="/resume">Resume</a>
+					    <a class="nav-item" href="/blog">Blog</a>
+					  </div>
+		      </div>
+		    </header>
+		  </div>
+
+			
+
+			
+				<!-- Hero footer: will stick at the bottom -->
+				<div class="hero-foot">
+					<nav class="tabs is-boxed is-fullwidth sideways-scroll">
+						<div class="container">
+							<ul>
+								
+									<li><a href=""></a></li>
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			
+		</section>
+		<!--END Nav Header -->
+
+		<section class="section">
+  <a href="/resume/portfolio">&larr; Back to Portfolio</a><br><br>
+
+  <h1 class="title">UCSB Connect Initiative</h1>
+  <h2 class="subtitle">Category: scripting</h2>
+
+  <p><strong>Time Frame</strong>:</p>
+  <p>Starting June 2015</p>
+  <br>
+
+  
+
+  <p><strong>Technologies</strong>:</p>
+  <p style="line-height:200%">
+    
+      <span class="tag is-primary">Perl</span>
+    
+      <span class="tag is-primary">PowerShell</span>
+    
+      <span class="tag is-primary">RabbitMQ</span>
+    
+      <span class="tag is-primary">Multithreading</span>
+    
+      <span class="tag is-primary">LDAP</span>
+    
+  </p>
+  <br>
+
+  
+    <p><strong>Links</strong>:</p>
+    <p>
+      
+        <a class="level-item button is-info" href="http://www.connect.ucsb.edu">Link to Project</a>
+      
+      
+    </p>
+    <br>
+  
+
+  <p><strong>Project Description</strong>:</p>
+  <p>"Connect is UCSB’s new communication and collaboration service. The core communication components include e-mail and calendaring, with more to come as we expand the service offerings. The core components of Connect are based on Google Apps for Work - Education Edition."​ - http://www.connect.ucsb.edu/about"
+
+My responsibilities for this project are mainly related to user/functional/resource account actions. In addition to creating programs to handle future activities within Connect's jurisdiction, we are also creating specialized scripts to aid in the migration process from our previous infrastructure.
+
+One of such scripts was a perl program that went through lists of usernames that corresponded to users that owned Oracle CorporateTime calendars on the local calendar server. Due to the large number of users, the program had to be run in parallel, which let it process about 3200 accounts in 12 hours with 8 processors (it would have taken a few days in serial).
+</p>
+</section>
+
+
+		<!--BEGIN Footer -->
+		<footer class="footer">
+			<div class="container">
+		    <div class="content has-text-centered">
+					<p>
+						<strong>Contact</strong> or <strong>Follow</strong> me on these platforms:
+					</p>
+		      <p>
+		    		<a href="mailto:nick@nick-brown.me" title="email">
+		          <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		    		<a href="https://github.com/ncbrown1" title="github">
+		          <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		        <a href="https://linkedin.com/in/ncbrown1" title="linkedin">
+		          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		        <a href="https://twitter.com/ncbrown1" title="twitter">
+		          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+		        </a> &nbsp; _ &nbsp;
+		        <a href="https://open.spotify.com/user/121577201" title="spotify">
+		          <i class="fa fa-spotify fa-2x" aria-hidden="true"></i>
+		        </a>
+		      </p>
+					<p>
+						<a href="http://nick-brown.me">Nick Brown</a> &copy; 2016
+					</p>
+		    </div>
+			</div>
+		</footer>
+		<!--END Footer -->
+
+		<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				$(".nav-toggle").on("click", function(event) {
+					$(".nav-menu").toggleClass('is-active');
+				});
+			});
+		</script>
+	</body>
+</html>
