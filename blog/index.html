@@ -4,29 +4,38 @@ title: Nick's Blog
 subtitle: Things that I feel others should know.
 ---
 <section class="section">
-  <div class="container content">
-    <!-- This loops through the paginated posts -->
-    {% for post in paginator.posts %}
-      <h2 class="title is-3"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-      <p class="subtitle">
-        <span class="date">{{ post.date | date_to_string }}</span>
-      </p>
-      <div class="content">
-        {{ post.content }}
+  <div class="container">
+    <div class="columns">
+      <div class="column content is-three-quarters">
+        <!-- This loops through the paginated posts -->
+        {% for post in paginator.posts %}
+          <h2 class="title is-3"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+          <p class="subtitle">
+            <span class="date">{{ post.date | date_to_string }}</span>
+          </p>
+          <div class="content">
+            {{ post.content | truncatewords: 75 }} <a href="{{ post.url }}">Read more...</a>
+          </div>
+        {% endfor %}
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+          {% endif %}
+          <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+          {% endif %}
+        </div>
+
+        <br/>
       </div>
-    {% endfor %}
-
-    <!-- Pagination links -->
-    <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-      {% endif %}
-      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-      {% endif %}
+      <div class="column">
+        <a class="twitter-timeline"  href="https://twitter.com/search?q=ncbrown1" data-widget-id="767949012955652096">Tweets about ncbrown1</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+      </div>
     </div>
-
-    <br/>
   </div>
 </section>
